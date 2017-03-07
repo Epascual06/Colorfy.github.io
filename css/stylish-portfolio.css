@@ -14,6 +14,11 @@ body {
 
 body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: #878787; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(circle, white , #878787 ); /* Safari */
+  background: -o-radial-gradient(circle, white , #878787 ); /* Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(circle, white , #878787 ); /* Firefox 3.6 to 15 */
+  background: radial-gradient(circle,white , #878787 ); /* Standard syntax */
 }
 
 .text-vertical-center {
@@ -151,15 +156,15 @@ hr.small {
 /* Header */
 .header h1 {
     color: white;
+    text-shadow: 1px 7px 5px black;
     
 }
 .header h3{
     color: white;
+    text-shadow: 0px 0px 1px black,0px 0px 1px black,0px 0px 1px black,0px 0px 1px black,0px 0px 1px black,0px 0px 1px black;
 
 }
-.header .shadow{
-    text-shadow: 0px, 3px, 4px, #000;
-}
+
 
 .header {
     display: table;
@@ -196,13 +201,21 @@ hr.small {
 .callout {
     display: table;
     width: 100%;
-    height: 400px;
+    height: 500px;
     color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
+    background: url(../img/art.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+.callout h1{
+ color: black;
+ text-shadow: 0px 0px 1px white,0px 0px 1px white,0px 0px 1px white,0px 0px 1px white,0px 0px 1px white,0px 0px 1px white,0px 0px 1px white,0px 0px 1px white;
+}
+.callout h3{
+color:black;
+text-shadow: 0px 0px 1px white,0px 0px 1px white,0px 0px 1px white;
 }
 
 /* Portfolio */
@@ -347,7 +360,8 @@ footer {
   font-size: 3em;
 }
 .portfolio-modal .modal-content p {
-  margin-bottom: 30px;
+    margin-top: 30px;
+  margin-bottom: 50px;
 }
 .portfolio-modal .modal-content p.item-intro {
   margin: 20px 0 30px;
@@ -360,8 +374,10 @@ footer {
   margin-top: 0;
 }
 .portfolio-modal .modal-content img {
-  margin-bottom: 30px;
-  align-content: center;
+    display: block;
+  margin-bottom: 50px;
+  margin:auto;
+  box-shadow: 10px 10px 12px black
 
 }
 .portfolio-modal .close-modal {
